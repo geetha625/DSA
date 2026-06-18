@@ -25,6 +25,8 @@ def palindromeString(s):
        right-=1
     return True
 s="madam"
-print(palindromeString(s))
+print(palindromeString(s))     # True
+
+
 
 
