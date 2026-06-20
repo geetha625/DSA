@@ -19,4 +19,6 @@ res=linear_search(arr,target)
 if res!=-1:
     print("element found at :",res)
 else:
-    print("element not found")
+    print("element not found")                     # element not found
+
+

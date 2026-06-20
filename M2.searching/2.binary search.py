@@ -70,7 +70,7 @@ def last_occurence(arr,k):
 arr=[1,2,2,2,3,4]
 k=2
 res=last_occurence(arr,k)
-print(res)
+print(res)                                # 3
 
 
 
