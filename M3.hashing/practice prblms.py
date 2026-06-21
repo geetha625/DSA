@@ -41,4 +41,4 @@ common=set()
 for num in arr2:
      if num in set1:
           common.add(num)
-print(common)
+print(common)                             # {3, 4}

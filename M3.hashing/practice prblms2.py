@@ -9,6 +9,7 @@ print(freq)                                # {4: 3, 5: 2, 6: 1}
 # most freq element
 
 arr = [1,1,2,2,2,3]
+freq={}
 max_freq=0
 ans=-1
 for num in arr:
@@ -26,5 +27,10 @@ for num in arr:
     if num in seen:
        print(num)
        break
-    seen.add(num)
+    seen.add(num)              # 3
+
+freq = {1:3, 2:2, 3:1}
+
+for num in freq:
+    print(num, freq[num])
 
