@@ -6,4 +6,7 @@ for i in range(1,len(arr)):
         arr[j+1]=arr[j]
         j-=1
     arr[j+1]=key
-print(arr)
+print(arr)                                  # [1, 2, 5, 8]
+
+''' time complexity if sorted : best case : o(n)
+    time complexity if not sorted : worst case : o(n2)'''

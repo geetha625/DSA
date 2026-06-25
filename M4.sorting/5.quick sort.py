@@ -10,4 +10,4 @@ def quickSort(arr):
         else:
             right.append(num)
     return quickSort(left)+[pivot]+(right)
-print(quickSort([7,2,9,1,5,8]))
+print(quickSort([7,2,9,1,5,8]))                     # [1, 2, 5, 7, 8, 9]
