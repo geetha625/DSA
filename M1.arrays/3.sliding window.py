@@ -1,3 +1,5 @@
+''' FIXED SIZED SLIDING WINDOW '''
+
 # Print the sum of every window of size 3.
 
 arr = [1,2,3,4,5]
@@ -30,11 +32,27 @@ for i in range(k,len(arr)):
     max_sum=max(max_sum,window_sum)
 print(max_sum)                                       # 16
 
-arr = [4,2,1,,1,2,8]
+arr = [4,2,1,1,2,8]
 k = 3
 window_sum=sum(arr[:k])
 max_sum=window_sum
 for i in range(k,len(arr)):
     window_sum=window_sum-arr[i-k]+arr[i]
     max_sum=max(max_sum,window_sum)
-print(max_sum)                                       
+print(max_sum)   
+
+''' VARIABLE SIZED SLIDING WINDOW '''
+
+# Find the length of the longest subarray whose sum is ≤ 8.
+arr = [1,2,3,4,2]
+limit = 8
+left=0
+window_sum=0
+max_length=0
+for right in range(len(arr)):
+    window_sum+=arr[right]
+    while window_sum>limit:
+        window_sum-=arr[left]
+        left+=1
+    max_length=max(max_length,right-left+1)
+print(max_length)
