@@ -66,8 +66,8 @@ window_sum=0
 max_length=0
 for right in range(len(arr)):
     window_sum+=arr[left]
-    while window_sum<=limit:
+    while window_sum>=limit:
         window_sum-=arr[right]
         right+=1
     max_length=max(max_length,right-left+1)
-print(max_length)            
+print(max_length)                                 # wrong  
