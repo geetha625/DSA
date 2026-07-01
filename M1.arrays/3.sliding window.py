@@ -70,4 +70,4 @@ for right in range(len(arr)):
         min_length=min(min_length,right-left+1)
         window_sum-=arr[left]
         left+=1
-print(min_length)                                 # 3
+print(min_length)                                 # 2
