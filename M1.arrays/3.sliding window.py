@@ -71,3 +71,14 @@ for right in range(len(arr)):
         window_sum-=arr[left]
         left+=1
 print(min_length)                                 # 2
+
+# longest substring
+s="abcabc"
+last_seen={}
+left=0
+max_length=0
+for right in range(len(s)):
+    if s[right] in last_seen:
+        left=max(left,last_seen[s[right]]+1)
+        max_length=max(max_length,right-left+1)
+print(max_length)
