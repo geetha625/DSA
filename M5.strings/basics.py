@@ -33,4 +33,4 @@ for ch in a:
         freq[ch]+=1
     else:
         freq[ch]=1
-print(freq)
+print(freq)                  #  {'b': 1, 'a': 3, 'n': 2}
