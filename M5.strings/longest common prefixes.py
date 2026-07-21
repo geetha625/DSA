@@ -30,4 +30,4 @@ def isAnagram(s,t):
       return freq1==freq2
 s="listen"
 t="silent"
-print(isAnagram(s,t))
+print(isAnagram(s,t))              # True
